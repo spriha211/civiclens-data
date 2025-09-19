@@ -1,0 +1,92 @@
+[
+  {
+    "id": "prop-22-2020",
+    "displayId": "Prop 22 (2020)",
+    "type": "prop",
+    "topics": ["labor", "gig-economy"],
+    "status": "passed",
+    "official_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
+    "full_text_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
+    "one_line": "Defined app-based rideshare and delivery drivers as independent contractors, not employees.",
+    "summary_short_bullets": [
+      "Classifies drivers as contractors, not employees",
+      "Limits access to employee benefits and protections",
+      "Companies must provide minimum earnings guarantees",
+      "Adds some healthcare stipends and accident insurance",
+      "Overrode conflicting local labor laws"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  },
+  {
+    "id": "prop-1-2022",
+    "displayId": "Prop 1 (2022)",
+    "type": "prop",
+    "topics": ["reproductive rights", "constitution"],
+    "status": "passed",
+    "official_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
+    "full_text_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
+    "one_line": "Added the right to reproductive freedom, including abortion, to California’s constitution.",
+    "summary_short_bullets": [
+      "Amends CA Constitution",
+      "Protects right to abortion",
+      "Protects access to contraceptives"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  },
+  {
+    "id": "prop-30-2022",
+    "displayId": "Prop 30 (2022)",
+    "type": "prop",
+    "topics": ["environment", "EV funding", "wildfire"],
+    "status": "failed",
+    "official_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
+    "full_text_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
+    "one_line": "Proposed a tax on high incomes to fund electric vehicle incentives and wildfire prevention; rejected by voters.",
+    "summary_short_bullets": [
+      "Would impose new tax on incomes over $2M",
+      "Funding earmarked for EV subsidies",
+      "Funding also for wildfire prevention",
+      "Opposed by Governor and some groups"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  },
+  {
+    "id": "prop-47-2014",
+    "displayId": "Prop 47 (2014)",
+    "type": "prop",
+    "topics": ["criminal justice", "sentencing"],
+    "status": "passed",
+    "official_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
+    "full_text_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
+    "one_line": "Reduced certain drug possession and property crimes from felonies to misdemeanors.",
+    "summary_short_bullets": [
+      "Reclassified many nonviolent crimes as misdemeanors",
+      "Freed up prison space and reduced costs",
+      "Directed savings toward education and treatment",
+      "Later became controversial over crime increases"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  },
+  {
+    "id": "prop-98-1988",
+    "displayId": "Prop 98 (1988)",
+    "type": "prop",
+    "topics": ["education", "school funding"],
+    "status": "passed",
+    "official_url": "https://lao.ca.gov/Publications/Report/prop98-primer", 
+    "full_text_url": "https://lao.ca.gov/Publications/Report/prop98-primer",
+    "one_line": "Guaranteed a minimum percentage of the state budget for K–12 schools and community colleges.",
+    "summary_short_bullets": [
+      "Amended CA Constitution",
+      "Ensured annual minimum funding for schools",
+      "Applies to K–12 and community colleges",
+      "Still affects education budgets today"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  }
+]
