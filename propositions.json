@@ -1,9 +1,51 @@
 [
   {
+    "id": "prop-50",
+    "displayId": "Prop 50",
+    "type": "prop",
+    "topics": [],
+    "status": "pending",
+    "official_url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures",
+    "full_text_url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures",
+    "one_line": "",
+    "summary_short_bullets": [],
+    "summary_detailed": "",
+    "updated_at": "2025-09-20T04:51:55Z",
+    "sources": [
+      {
+        "name": "CA Secretary of State",
+        "url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures"
+      }
+    ]
+  },
+  {
+    "id": "prop-1-2022",
+    "displayId": "Prop 1 (2022)",
+    "type": "prop",
+    "topics": [
+      "reproductive rights",
+      "constitution"
+    ],
+    "status": "passed",
+    "official_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
+    "full_text_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
+    "one_line": "Added the right to reproductive freedom, including abortion, to California’s constitution.",
+    "summary_short_bullets": [
+      "Amends CA Constitution",
+      "Protects right to abortion",
+      "Protects access to contraceptives"
+    ],
+    "summary_detailed": "Placeholder detailed summary here.",
+    "updated_at": "2025-09-18"
+  },
+  {
     "id": "prop-22-2020",
     "displayId": "Prop 22 (2020)",
     "type": "prop",
-    "topics": ["labor", "gig-economy"],
+    "topics": [
+      "labor",
+      "gig-economy"
+    ],
     "status": "passed",
     "official_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
     "full_text_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
@@ -19,27 +61,14 @@
     "updated_at": "2025-09-18"
   },
   {
-    "id": "prop-1-2022",
-    "displayId": "Prop 1 (2022)",
-    "type": "prop",
-    "topics": ["reproductive rights", "constitution"],
-    "status": "passed",
-    "official_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
-    "full_text_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
-    "one_line": "Added the right to reproductive freedom, including abortion, to California’s constitution.",
-    "summary_short_bullets": [
-      "Amends CA Constitution",
-      "Protects right to abortion",
-      "Protects access to contraceptives"
-    ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
-  },
-  {
     "id": "prop-30-2022",
     "displayId": "Prop 30 (2022)",
     "type": "prop",
-    "topics": ["environment", "EV funding", "wildfire"],
+    "topics": [
+      "environment",
+      "EV funding",
+      "wildfire"
+    ],
     "status": "failed",
     "official_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
     "full_text_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
@@ -57,7 +86,10 @@
     "id": "prop-47-2014",
     "displayId": "Prop 47 (2014)",
     "type": "prop",
-    "topics": ["criminal justice", "sentencing"],
+    "topics": [
+      "criminal justice",
+      "sentencing"
+    ],
     "status": "passed",
     "official_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
     "full_text_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
@@ -75,9 +107,12 @@
     "id": "prop-98-1988",
     "displayId": "Prop 98 (1988)",
     "type": "prop",
-    "topics": ["education", "school funding"],
+    "topics": [
+      "education",
+      "school funding"
+    ],
     "status": "passed",
-    "official_url": "https://lao.ca.gov/Publications/Report/prop98-primer", 
+    "official_url": "https://lao.ca.gov/Publications/Report/prop98-primer",
     "full_text_url": "https://lao.ca.gov/Publications/Report/prop98-primer",
     "one_line": "Guaranteed a minimum percentage of the state budget for K–12 schools and community colleges.",
     "summary_short_bullets": [
