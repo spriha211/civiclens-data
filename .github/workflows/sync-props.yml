@@ -1,9 +1,9 @@
 name: Sync propositions from Google Sheet
 
 on:
-  workflow_dispatch: {}     # run manually from Actions tab
+  workflow_dispatch: {}
   schedule:
-    - cron: "0 * * * *"     # hourly; adjust as you like
+    - cron: "0 * * * *"  # hourly
 
 jobs:
   sync:
@@ -16,7 +16,7 @@ jobs:
 
       - name: Download published CSV from Google Sheets
         run: |
-          curl -L "<https://docs.google.com/spreadsheets/d/e/2PACX-1vSerSSb4-K9RII_tmNfAO_4UqqWBA8yWh3bj2MMsMe9EGxBlH5QT-r0qNfkg1Z96KqgVTT1zX1mQwWq/pub?gid=0&single=true&output=csv>" -o tmp/propositions.csv
+          curl -L "<PASTE_YOUR_PUBLISHED_CSV_URL_HERE>" -o tmp/propositions.csv
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,9 +25,6 @@ jobs:
 
       - name: Convert CSV → JSON
         run: python scripts/sheet_to_json.py
-
-      - name: Show diff
-        run: git status && git diff --stat || true
 
       - name: Commit & push if changed
         run: |
