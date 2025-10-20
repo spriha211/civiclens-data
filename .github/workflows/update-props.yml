@@ -1,36 +1,42 @@
-name: Update Propositions
+name: Sync propositions from Google Sheet
 
 on:
+  workflow_dispatch: {}     # run manually from Actions tab
   schedule:
-    # GitHub Actions uses UTC.
-    # 14:00 UTC = 7:00 AM Pacific during PDT, 6:00 AM during PST.
-    - cron: "0 14 * * 1"   # run every Monday
-  workflow_dispatch: {}     # allow manual "Run workflow"
+    - cron: "0 * * * *"     # hourly; adjust as you like
 
 jobs:
-  update:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Make tmp dir
+        run: mkdir -p tmp
+
+      - name: Download published CSV from Google Sheets
+        run: |
+          curl -L "<https://docs.google.com/spreadsheets/d/e/2PACX-1vSerSSb4-K9RII_tmNfAO_4UqqWBA8yWh3bj2MMsMe9EGxBlH5QT-r0qNfkg1Z96KqgVTT1zX1mQwWq/pub?gid=0&single=true&output=csv>" -o tmp/propositions.csv
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - run: pip install requests beautifulsoup4 lxml
+      - name: Convert CSV → JSON
+        run: python scripts/sheet_to_json.py
 
-      - name: Update props
-        run: |
-          if [ -f scripts/update_props.py ]; then
-            python scripts/update_props.py
-          else
-            python update_props.py
-          fi
+      - name: Show diff
+        run: git status && git diff --stat || true
 
       - name: Commit & push if changed
         run: |
-          git config user.name "civiclens-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add propositions.json
-          git diff --quiet && echo "No changes" || git commit -m "Update propositions.json"
-          git push
+          if git diff --quiet; then
+            echo "No changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add propositions.json
+            git commit -m "chore: sync propositions from Google Sheet"
+            git push
+          fi
