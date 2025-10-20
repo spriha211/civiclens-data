@@ -1,20 +1,40 @@
 [
   {
-    "id": "prop-50",
-    "displayId": "Prop 50",
+    "id": "prop-1-2024",
+    "displayId": "Prop 1 (2024)",
     "type": "prop",
-    "topics": [],
-    "status": "pending",
-    "official_url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures",
-    "full_text_url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures",
-    "one_line": "",
-    "summary_short_bullets": [],
-    "summary_detailed": "",
-    "updated_at": "2025-09-20T04:51:55Z",
+    "topics": [
+      "behavioral-health",
+      "housing",
+      "bonds"
+    ],
+    "status": "passed",
+    "official_url": "https://vigarchive.sos.ca.gov/2024/primary/propositions/1/,https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
+    "full_text_url": "",
+    "one_line": "Authorizes bonds and revises Mental Health Services Act for treatment/housing.",
+    "summary_short_bullets": [
+      "- $6.38B in state bonds for behavioral health facilities/housing;- Shifts and clarifies MHSA program uses and oversight"
+    ],
+    "summary_detailed": "Proposition 1 (2024) packaged a behavioral-health infrastructure bond with updates to MHSA funding and county program rules, aiming to add treatment beds and supportive housing (including for veterans and people experiencing homelessness).",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2024-Primary",
+    "election_date": "2024-03-05",
+    "fiscal_impact": "Debt service costs over time; repurposes existing MHSA revenues among programs",
+    "keywords": [
+      "MHSA",
+      "behavioral health",
+      "bond",
+      "homelessness",
+      "veterans"
+    ],
     "sources": [
       {
-        "name": "CA Secretary of State",
-        "url": "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures"
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2024/primary/propositions/1/"
+      },
+      {
+        "name": "Text (PDF)",
+        "url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf"
       }
     ]
   },
@@ -23,20 +43,254 @@
     "displayId": "Prop 1 (2022)",
     "type": "prop",
     "topics": [
-      "reproductive rights",
+      "reproductive-rights",
       "constitution"
     ],
     "status": "passed",
-    "official_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
-    "full_text_url": "https://vig.cdn.sos.ca.gov/2024/primary/pdf/topl.pdf",
-    "one_line": "Added the right to reproductive freedom, including abortion, to California’s constitution.",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/1/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop1-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Adds explicit right to reproductive freedom (abortion and contraception) to CA Constitution.",
     "summary_short_bullets": [
-      "Amends CA Constitution",
-      "Protects right to abortion",
-      "Protects access to contraceptives"
+      "- Places reproductive freedom in state constitution;- Does not narrow existing privacy/equal protection"
     ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
+    "summary_detailed": "Prop 1 affirmed reproductive rights in the state constitution, codifying protections for abortion and contraception that already existed in state law.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "No direct fiscal effect; services already protected in state law",
+    "keywords": [
+      "abortion",
+      "contraception",
+      "privacy",
+      "equal protection"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/1/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=1&year=2022"
+      }
+    ]
+  },
+  {
+    "id": "prop-26-2022",
+    "displayId": "Prop 26 (2022)",
+    "type": "prop",
+    "topics": [
+      "gambling",
+      "tribal",
+      "gaming"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/26/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop26-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have allowed in-person sports wagering at tribal casinos and certain racetracks.",
+    "summary_short_bullets": [
+      "- Legalizes in-person sports betting under tribal compacts;- Authorizes additional table games (roulette/dice)"
+    ],
+    "summary_detailed": "Prop 26 failed; would have permitted in-person sports wagering on tribal lands and limited racetracks subject to regulation.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Potential state revenues/costs depending on wagering volume and enforcement",
+    "keywords": [
+      "gaming",
+      "casinos",
+      "sports betting",
+      "tribal compacts"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/26/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=26&year=2022"
+      }
+    ]
+  },
+  {
+    "id": "prop-27-2022",
+    "displayId": "Prop 27 (2022)",
+    "type": "prop",
+    "topics": [
+      "gambling",
+      "online",
+      "gaming"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/27/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop27-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have allowed online/mobile sports wagering statewide under certain partnerships.",
+    "summary_short_bullets": [
+      "- Legalizes online sports betting aligned with tribes/partners;- Creates homelessness fund with revenues"
+    ],
+    "summary_detailed": "Prop 27 failed; it would have authorized online sports betting outside tribal lands with regulatory and revenue provisions.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Net revenue uncertain; significant regulatory costs offset by fees/taxes if enacted",
+    "keywords": [
+      "online wagering",
+      "homelessness fund",
+      "licensing"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/27/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=27&year=2022"
+      }
+    ]
+  },
+  {
+    "id": "prop-28-2022",
+    "displayId": "Prop 28 (2022)",
+    "type": "prop",
+    "topics": [
+      "education",
+      "arts",
+      "music"
+    ],
+    "status": "passed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/28/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop28.pdf",
+    "full_text_url": "",
+    "one_line": "Provides additional ongoing funding for arts/music education in K–12 schools.",
+    "summary_short_bullets": [
+      "- Earmarks ~1% of Prop 98 funding increment for arts/music;- Distributes more to low-income schools"
+    ],
+    "summary_detailed": "Prop 28 requires a dedicated annual appropriation for arts education above the Prop 98 minimum, with allocations weighted for need.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Increases state costs by about $1B annually for arts education",
+    "keywords": [
+      "arts education",
+      "Prop 98",
+      "K-12",
+      "funding"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/28/"
+      },
+      {
+        "name": "SOS Summary",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/28/"
+      }
+    ]
+  },
+  {
+    "id": "prop-29-2022",
+    "displayId": "Prop 29 (2022)",
+    "type": "prop",
+    "topics": [
+      "health",
+      "dialysis"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/29/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop29.pdf",
+    "full_text_url": "",
+    "one_line": "Would have required on-site licensed medical professional and other rules at dialysis clinics.",
+    "summary_short_bullets": [
+      "- Requires physician/NP/PA on site during treatment;- Ownership disclosure and infection reporting"
+    ],
+    "summary_detailed": "Third dialysis initiative (after 2018/2020) also failed; requirements would have increased clinic staffing/reporting.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Likely tens of millions in state/local costs if enacted",
+    "keywords": [
+      "dialysis",
+      "clinics",
+      "SEIU-UHW",
+      "healthcare regulation"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/29/"
+      }
+    ]
+  },
+  {
+    "id": "prop-30-2022",
+    "displayId": "Prop 30 (2022)",
+    "type": "prop",
+    "topics": [
+      "environment",
+      "taxation",
+      "EVs"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/30/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop30-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have added 1.75% tax on income over $2M to fund ZEV programs and wildfire efforts.",
+    "summary_short_bullets": [
+      "- Funds EV rebates/infrastructure;- Funds wildfire prevention/response"
+    ],
+    "summary_detailed": "Prop 30 was defeated; it would have raised high-income taxes to fund ZEV incentives/charging and wildfire programs.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Increased state revenue $3.5–$5B annually if enacted; funds restricted to programs",
+    "keywords": [
+      "zero-emission",
+      "wildfire",
+      "income tax",
+      "rebates"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/30/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://vig.cdn.sos.ca.gov/2022/general/pdf/prop30-title-summ-analysis.pdf"
+      }
+    ]
+  },
+  {
+    "id": "prop-31-2022",
+    "displayId": "Prop 31 (2022)",
+    "type": "prop",
+    "topics": [
+      "public-health",
+      "tobacco"
+    ],
+    "status": "passed",
+    "official_url": "https://vigarchive.sos.ca.gov/2022/general/propositions/31/,https://vig.cdn.sos.ca.gov/2022/general/pdf/prop31.pdf",
+    "full_text_url": "",
+    "one_line": "Referendum that upheld the 2020 law banning retail sale of most flavored tobacco.",
+    "summary_short_bullets": [
+      "- Voters affirmed flavored tobacco ban;- Law took effect statewide"
+    ],
+    "summary_detailed": "Prop 31 asked voters to approve SB 793’s flavored tobacco ban; “Yes” vote (pass) upheld the law, keeping the ban in place.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2022-General",
+    "election_date": "2022-11-08",
+    "fiscal_impact": "Minor state enforcement costs; reduced tobacco tax revenue possible",
+    "keywords": [
+      "flavored tobacco",
+      "SB 793",
+      "vape",
+      "menthol"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2022/general/propositions/31/"
+      }
+    ]
   },
   {
     "id": "prop-22-2020",
@@ -48,60 +302,544 @@
     ],
     "status": "passed",
     "official_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
-    "full_text_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/topl-prop22.pdf",
-    "one_line": "Defined app-based rideshare and delivery drivers as independent contractors, not employees.",
+    "full_text_url": "",
+    "one_line": "Classifies app-based drivers as independent contractors.",
     "summary_short_bullets": [
-      "Classifies drivers as contractors, not employees",
-      "Limits access to employee benefits and protections",
-      "Companies must provide minimum earnings guarantees",
-      "Adds some healthcare stipends and accident insurance",
-      "Overrode conflicting local labor laws"
+      "- Classifies rideshare and delivery drivers as independent contractors;- Guarantees minimum earnings (engaged time) and health stipends;- Adds occupational accident insurance and safety policies"
     ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
+    "summary_detailed": "Prop 22 allowed app-based transportation and delivery companies to treat drivers as independent contractors rather than employees while requiring limited benefits (earnings floor based on “engaged time,” health stipends, and accident insurance). It preempts local rules in conflict and limits legislative amendments.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "State enforcement and courts costs minor; company-provided benefits funded privately",
+    "keywords": [
+      "uber",
+      "lyft",
+      "doorDash",
+      "instacart",
+      "ab5",
+      "contractors",
+      "drivers"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/22/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=22&year=2020"
+      }
+    ]
   },
   {
-    "id": "prop-30-2022",
-    "displayId": "Prop 30 (2022)",
+    "id": "prop-24-2020",
+    "displayId": "Prop 24 (2020)",
     "type": "prop",
     "topics": [
-      "environment",
-      "EV funding",
-      "wildfire"
+      "privacy",
+      "consumer-protection",
+      "data"
+    ],
+    "status": "passed",
+    "official_url": "https://vigarchive.sos.ca.gov/2020/general/propositions/24/",
+    "full_text_url": "",
+    "one_line": "Expands California consumer data privacy and creates the CPPA.",
+    "summary_short_bullets": [
+      "- Expands rights (correct, limit “sensitive” data use);- Increases business obligations and enforcement;- Creates California Privacy Protection Agency (CPPA)"
+    ],
+    "summary_detailed": "Proposition 24 (CPRA) strengthened and amended the CCPA: it added new rights (like correction and limits on sensitive data), changed thresholds for covered businesses, and created a dedicated state privacy regulator (CPPA) that shares enforcement with the DOJ.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Ongoing state costs in low tens of millions annually for new privacy agency",
+    "keywords": [
+      "privacy",
+      "ccpa",
+      "cpra",
+      "data-breach",
+      "do-not-sell",
+      "adtech"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/24/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=24&year=2020"
+      }
+    ]
+  },
+  {
+    "id": "prop-25-2020",
+    "displayId": "Prop 25 (2020)",
+    "type": "prop",
+    "topics": [
+      "criminal-justice",
+      "bail"
     ],
     "status": "failed",
-    "official_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
-    "full_text_url": "https://vig.cdn.sos.ca.gov/2012/general/pdf/text-proposed-laws-v2.pdf",
-    "one_line": "Proposed a tax on high incomes to fund electric vehicle incentives and wildfire prevention; rejected by voters.",
+    "official_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/prop25-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Referendum that rejected replacing cash bail with risk assessment.",
     "summary_short_bullets": [
-      "Would impose new tax on incomes over $2M",
-      "Funding earmarked for EV subsidies",
-      "Funding also for wildfire prevention",
-      "Opposed by Governor and some groups"
+      "- Referendum on SB 10 risk-assessment system;- “No” vote kept money bail in place statewide"
     ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
+    "summary_detailed": "Prop 25 asked voters whether to uphold SB 10 to replace cash bail with risk assessment. Voters rejected it (“No”), so cash bail remains while related policy debates continue.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Potential county jail savings under SB 10 did not occur due to repeal by referendum",
+    "keywords": [
+      "cash bail",
+      "SB 10",
+      "risk assessment",
+      "pretrial"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/25/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=25&year=2020"
+      }
+    ]
+  },
+  {
+    "id": "prop-23-2020",
+    "displayId": "Prop 23 (2020)",
+    "type": "prop",
+    "topics": [
+      "health",
+      "dialysis"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2020/general/propositions/23/; https://vig.cdn.sos.ca.gov/2020/general/pdf/prop23-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have required a physician/clinician on-site at dialysis clinics.",
+    "summary_short_bullets": [
+      "- On-site physician/NP/PA during treatment;- New infection reporting and closure approvals;- Anti-discrimination provisions"
+    ],
+    "summary_detailed": "Prop 23 proposed additional dialysis clinic staffing and reporting requirements. Voters rejected it after similar measures failed in 2018 and later in 2022.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Increased state/local costs likely tens of millions annually if enacted",
+    "keywords": [
+      "dialysis",
+      "DaVita",
+      "Fresenius",
+      "clinics",
+      "SEIU-UHW"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/23/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=23&year=2020"
+      }
+    ]
+  },
+  {
+    "id": "prop-21-2020",
+    "displayId": "Prop 21 (2020)",
+    "type": "prop",
+    "topics": [
+      "housing",
+      "rent-control"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2020/general/propositions/21/,https://vig.cdn.sos.ca.gov/2020/general/pdf/prop21-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have expanded local authority to enact rent control.",
+    "summary_short_bullets": [
+      "- Eases limits of Costa-Hawkins for local ordinances;- Exemptions for newer and single-family owner-occupied units"
+    ],
+    "summary_detailed": "Prop 21 sought to allow broader local rent control but maintained certain exemptions. Voters rejected it; state limits on local rent control (Costa-Hawkins) remain.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Unknown local government effects; potential private market impacts",
+    "keywords": [
+      "tenant",
+      "rent",
+      "Costa-Hawkins",
+      "housing"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/21/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=21&year=2020"
+      }
+    ]
+  },
+  {
+    "id": "prop-20-2020",
+    "displayId": "Prop 20 (2020)",
+    "type": "prop",
+    "topics": [
+      "criminal-justice",
+      "sentencing"
+    ],
+    "status": "failed",
+    "official_url": "https://vig.cdn.sos.ca.gov/2020/general/pdf/prop20-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have increased penalties for some theft crimes and limited early release.",
+    "summary_short_bullets": [
+      "- Increases penalties for certain thefts;- Narrows early release eligibility;- Expands DNA collection to some misdemeanors"
+    ],
+    "summary_detailed": "Prop 20 proposed rolling back parts of prior justice reforms (e.g., Prop 47/57 changes). Voters rejected it, keeping current policies.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "State/local justice system costs and workload would have increased if enacted",
+    "keywords": [
+      "prop 47",
+      "parole",
+      "shoplifting",
+      "dna collection"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/20/"
+      },
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=20&year=2020"
+      }
+    ]
+  },
+  {
+    "id": "prop-19-2020",
+    "displayId": "Prop 19 (2020)",
+    "type": "prop",
+    "topics": [
+      "taxation",
+      "property-tax"
+    ],
+    "status": "passed",
+    "official_url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=19&year=2020",
+    "full_text_url": "",
+    "one_line": "Changes property tax rules for transfers and inheritance.",
+    "summary_short_bullets": [
+      "- Expands base-year transfer for eligible homeowners;- Narrows parent-to-child reassessment exclusions;- Adds wildfire disaster provisions"
+    ],
+    "summary_detailed": "Prop 19 lets eligible homeowners transfer assessed value to replacement homes statewide and limits inherited property tax benefits unless the heir uses it as a principal residence; includes wildfire disaster relief features.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Net effects vary by county; some revenue gains from narrowed inheritance rules",
+    "keywords": [
+      "property tax",
+      "base year transfer",
+      "inheritance",
+      "assessor"
+    ],
+    "sources": [
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=19&year=2020"
+      },
+      {
+        "name": "CA BOE",
+        "url": "https://www.boe.ca.gov/prop19/"
+      }
+    ]
+  },
+  {
+    "id": "prop-18-2020",
+    "displayId": "Prop 18 (2020)",
+    "type": "prop",
+    "topics": [
+      "elections",
+      "voting-rights"
+    ],
+    "status": "failed",
+    "official_url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=18&year=2020",
+    "full_text_url": "",
+    "one_line": "Would have allowed some 17-year-olds to vote in primaries.",
+    "summary_short_bullets": [
+      "- 17-year-olds eligible if turning 18 by general election;- Legislative constitutional amendment"
+    ],
+    "summary_detailed": "Prop 18 proposed allowing 17-year-olds who will be 18 by the general to vote in primaries/specials; it failed.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Minimal state/county election admin costs if enacted",
+    "keywords": [
+      "primaries",
+      "youth vote",
+      "election law"
+    ],
+    "sources": [
+      {
+        "name": "LAO Analysis",
+        "url": "https://lao.ca.gov/BallotAnalysis/Proposition?number=18&year=2020"
+      },
+      {
+        "name": "CalMatters Guide",
+        "url": "https://calmatters.org/election-2020-guide/proposition-18-primary-voting-17-year-olds/"
+      }
+    ]
+  },
+  {
+    "id": "prop-17-2020",
+    "displayId": "Prop 17 (2020)",
+    "type": "prop",
+    "topics": [
+      "elections",
+      "voting-rights"
+    ],
+    "status": "passed",
+    "official_url": "https://lao.ca.gov/ballot/2020/Prop17-110320.pdf",
+    "full_text_url": "",
+    "one_line": "Restores voting rights upon completion of prison term (people on parole may vote).",
+    "summary_short_bullets": [
+      "- Restores voting and eligibility to run for office while on parole;- Amends state constitution"
+    ],
+    "summary_detailed": "Prop 17 amended the constitution to allow individuals on state parole to vote and run for office; it passed statewide.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Administrative workload minor for elections; potential small costs for voter materials",
+    "keywords": [
+      "parole",
+      "re-enfranchisement",
+      "voting"
+    ],
+    "sources": [
+      {
+        "name": "LAO Analysis (PDF)",
+        "url": "https://lao.ca.gov/ballot/2020/Prop17-110320.pdf"
+      },
+      {
+        "name": "Brennan Center",
+        "url": "https://www.brennancenter.org/our-work/analysis-opinion/california-voters-approve-prop-17-restoring-voting-rights-people-who-have"
+      }
+    ]
+  },
+  {
+    "id": "prop-16-2020",
+    "displayId": "Prop 16 (2020)",
+    "type": "prop",
+    "topics": [
+      "civil-rights",
+      "education",
+      "public-employment"
+    ],
+    "status": "failed",
+    "official_url": "https://law.pacific.edu/sites/default/files/users/user242/proposition-16-cir20.pdf",
+    "full_text_url": "",
+    "one_line": "Would have repealed Prop 209 to allow affirmative action by public entities.",
+    "summary_short_bullets": [
+      "- Repeals 1996 ban on affirmative action in public sectors;- Would permit (not require) considering race/sex in limited contexts"
+    ],
+    "summary_detailed": "Prop 16 asked voters to repeal the constitutional ban on affirmative action (Prop 209). Voters rejected it; the ban remains.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "No direct fiscal effect; indirect impacts uncertain",
+    "keywords": [
+      "affirmative action",
+      "prop 209",
+      "diversity,higher-ed",
+      "hiring"
+    ],
+    "sources": [
+      {
+        "name": "McGeorge CIR",
+        "url": "https://law.pacific.edu/sites/default/files/users/user242/proposition-16-cir20.pdf"
+      },
+      {
+        "name": "CalMatters Guide",
+        "url": "https://calmatters.org/election-2020-guide/proposition-16-affirmative-action/"
+      }
+    ]
+  },
+  {
+    "id": "prop-15-2020",
+    "displayId": "Prop 15 (2020)",
+    "type": "prop",
+    "topics": [
+      "taxation",
+      "property-tax",
+      "schools"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2020/general/propositions/15/,https://vig.cdn.sos.ca.gov/2020/general/pdf/prop15-title-summ-analysis.pdf",
+    "full_text_url": "",
+    "one_line": "Would have created a “split-roll” to tax large commercial property at market value.",
+    "summary_short_bullets": [
+      "- Reassess most commercial/industrial property regularly;- New revenue for schools/local governments"
+    ],
+    "summary_detailed": "Prop 15 would have reassessed most commercial/industrial property at market value to fund schools and local governments; voters rejected it.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "Annual local revenue increase (billions) if enacted; state school funding interactions complicated",
+    "keywords": [
+      "split roll",
+      "Prop 13",
+      "commercial property",
+      "schools"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/general/propositions/15/"
+      },
+      {
+        "name": "Urban Institute Brief",
+        "url": "https://www.urban.org/sites/default/files/publication/102883/housing-and-land-use-implications-of-split-roll-property-tax-reform-in-ca_1.pdf"
+      }
+    ]
+  },
+  {
+    "id": "prop-14-2020",
+    "displayId": "Prop 14 (2020)",
+    "type": "prop",
+    "topics": [
+      "health",
+      "research",
+      "bonds"
+    ],
+    "status": "passed",
+    "official_url": "https://ballotpedia.org/California_Proposition_14%2C_Stem_Cell_Research_Institute_Bond_Initiative_%282020%29",
+    "full_text_url": "",
+    "one_line": "Issues $5.5B in bonds for the state stem cell institute (CIRM).",
+    "summary_short_bullets": [
+      "- Funds research/training/facilities via CIRM;- Adjusts governance and program scope"
+    ],
+    "summary_detailed": "Prop 14 authorized $5.5B in general obligation bonds to continue CIRM’s stem cell research and related programs; it passed.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-General",
+    "election_date": "2020-11-03",
+    "fiscal_impact": "State debt service ~hundreds of millions annually over decades",
+    "keywords": [
+      "stem cells",
+      "CIRM",
+      "bonds",
+      "biomed"
+    ],
+    "sources": [
+      {
+        "name": "LAO Overview",
+        "url": "https://lao.ca.gov/BallotAnalysis/Propositions?date=11%2F3%2F2020"
+      },
+      {
+        "name": "Ballotpedia",
+        "url": "https://ballotpedia.org/California_Proposition_14,_Stem_Cell_Research_Institute_Bond_Initiative_(2020)"
+      }
+    ]
+  },
+  {
+    "id": "prop-13-2020",
+    "displayId": "Prop 13 (Mar 2020)",
+    "type": "prop",
+    "topics": [
+      "education",
+      "bonds"
+    ],
+    "status": "failed",
+    "official_url": "https://vigarchive.sos.ca.gov/2020/primary/propositions/13/,https://vigarchive.sos.ca.gov/2020/primary/pdf/text-proposed-laws.pdf",
+    "full_text_url": "",
+    "one_line": "Would have issued $15B in state school facilities bonds (K-12/UC/CSU/CCC).",
+    "summary_short_bullets": [
+      "- Authorized bonds for modernization/new construction;- Adjusted local bond rules/matching"
+    ],
+    "summary_detailed": "March primary school bonds measure failed despite prior similar bonds’ success.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2020-Primary",
+    "election_date": "2020-03-03",
+    "fiscal_impact": "Debt service costs over time paid from General Fund if enacted",
+    "keywords": [
+      "school bonds",
+      "facilities",
+      "K-12",
+      "higher ed"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2020/primary/propositions/13/"
+      }
+    ]
   },
   {
     "id": "prop-47-2014",
     "displayId": "Prop 47 (2014)",
     "type": "prop",
     "topics": [
-      "criminal justice",
+      "criminal-justice",
       "sentencing"
     ],
     "status": "passed",
     "official_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
-    "full_text_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf",
-    "one_line": "Reduced certain drug possession and property crimes from felonies to misdemeanors.",
+    "full_text_url": "",
+    "one_line": "Reclassified certain nonviolent offenses from felonies to misdemeanors.",
     "summary_short_bullets": [
-      "Reclassified many nonviolent crimes as misdemeanors",
-      "Freed up prison space and reduced costs",
-      "Directed savings toward education and treatment",
-      "Later became controversial over crime increases"
+      "- Reduced penalties for some drug/prop crimes;- Directed savings to treatment/education"
     ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
+    "summary_detailed": "Prop 47 reduced penalties and redirected savings; later debates led to Prop 36 (2024) proposals to increase penalties for some crimes.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2014-General",
+    "election_date": "2014-11-04",
+    "fiscal_impact": "State/local savings from reduced incarceration; funds redirected per statute",
+    "keywords": [
+      "prop 36 (2024)",
+      "realignment",
+      "resentencing"
+    ],
+    "sources": [
+      {
+        "name": "California Courts",
+        "url": "https://courts.ca.gov/sites/default/files/courts/default/2024-08/prop-47-information.pdf"
+      }
+    ]
+  },
+  {
+    "id": "prop-28-2012-NOTE",
+    "displayId": "Prop 28 (2012) (context)",
+    "type": "prop",
+    "topics": [
+      "legislature",
+      "term-limits"
+    ],
+    "status": "passed",
+    "official_url": "https://vigarchive.sos.ca.gov/2012/primary/propositions/28/",
+    "full_text_url": "",
+    "one_line": "For reference: changed legislative term limits (not a recent prop but often referenced).",
+    "summary_short_bullets": [
+      "\"- Consolidated total service to 12 years in either house\",- Context only row (keep or delete as needed)"
+    ],
+    "summary_detailed": "",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "2012-Primary",
+    "election_date": "2012-06-05",
+    "fiscal_impact": "No direct significant fiscal effect",
+    "keywords": [
+      "term limits",
+      "assembly",
+      "senate,"
+    ],
+    "sources": [
+      {
+        "name": "CA SOS",
+        "url": "https://vigarchive.sos.ca.gov/2012/primary/propositions/28/"
+      }
+    ]
   },
   {
     "id": "prop-98-1988",
@@ -109,19 +847,30 @@
     "type": "prop",
     "topics": [
       "education",
-      "school funding"
+      "school-funding"
     ],
     "status": "passed",
     "official_url": "https://lao.ca.gov/Publications/Report/prop98-primer",
-    "full_text_url": "https://lao.ca.gov/Publications/Report/prop98-primer",
-    "one_line": "Guaranteed a minimum percentage of the state budget for K–12 schools and community colleges.",
+    "full_text_url": "",
+    "one_line": "Guarantees a minimum share of state budget for K–12 and community colleges.",
     "summary_short_bullets": [
-      "Amended CA Constitution",
-      "Ensured annual minimum funding for schools",
-      "Applies to K–12 and community colleges",
-      "Still affects education budgets today"
+      "- Establishes Prop 98 formulas and tests;- Continues to govern school funding levels"
     ],
-    "summary_detailed": "Placeholder detailed summary here.",
-    "updated_at": "2025-09-18"
+    "summary_detailed": "Prop 98 set constitutional funding guarantees for schools and community colleges; still central to California budgeting.",
+    "updated_at": "2025-10-12T08:00:00Z",
+    "cycle": "1988-General",
+    "election_date": "1988-11-08",
+    "fiscal_impact": "Allocations vary by Test 1/2/3 formulas; impacts General Fund and Prop 98 reserve",
+    "keywords": [
+      "Prop 98",
+      "education budget",
+      "minimum guarantee"
+    ],
+    "sources": [
+      {
+        "name": "LAO Primer",
+        "url": "https://lao.ca.gov/Publications/Report/prop98-primer"
+      }
+    ]
   }
 ]
