@@ -16,7 +16,7 @@ jobs:
 
       - name: Download published CSV from Google Sheets
         run: |
-          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vSerSSb4-K9RII_tmNfAO_4UqqWBA8yWh3bj2MMsMe9EGxBlH5QT-r0qNfkg1Z96KqgVTT1zX1mQwWq/pub?gid=0&single=true&output=csv" -o tmp/propositions.csv
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vSerSSb4-K9RII_tmNfAO_4UqqWBA8yWh3bj2MMsMe9EGxBlH5QT-r0qNfkg1Z96KqgVTT1zX1mQwWq/pub?output=csv" -o tmp/propositions.csv
 
       - name: Set up Python
         uses: actions/setup-python@v5
