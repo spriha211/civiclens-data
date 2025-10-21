@@ -23,30 +23,35 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "sonar", 
+        // ✅ correct model names (as of 2025)
+        model: "sonar", // or "sonar-pro" if you have Pro
         messages: [
-          { role: "system", content: "You are a helpful civic assistant for California propositions. Prefer concise, source-aware answers." },
-          { role: "user", content: prompt }
-        ]
+          {
+            role: "system",
+            content:
+              "You are a helpful civic assistant for California propositions. Prefer concise, factual answers.",
+          },
+          { role: "user", content: prompt },
+        ],
       }),
     });
 
     const data = await r.json();
 
-    // Try multiple shapes just in case
-    const fromChoices = data?.choices?.[0]?.message?.content;
-    const fromOutput = data?.output_text;
-    const text = (fromChoices || fromOutput || "").toString().trim();
+    // handle Perplexity’s new response shape
+    const text =
+      data?.choices?.[0]?.message?.content ||
+      data?.output_text ||
+      "(no response text)";
 
-    if (!text) {
-      // helpful debug payload (temporarily; remove later if you want)
+    if (!text || typeof text !== "string") {
       return res.status(200).json({
         answer: "No response.",
-        debug: data
+        debug: data,
       });
     }
 
-    return res.status(200).json({ answer: text });
+    return res.status(200).json({ answer: text.trim() });
   } catch (e) {
     return res.status(500).json({ error: String(e) });
   }
