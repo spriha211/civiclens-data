@@ -1,5 +1,11 @@
 // api/perplexity.js
 export default async function handler(req, res) {
+  // CORS for Flutter web
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(200).end();
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "POST only" });
   }
@@ -18,7 +24,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "sonar-medium-online", // or sonar-large
+        model: "sonar-medium-online", // or "sonar-large-online"
         messages: [
           { role: "system", content: "You are a helpful civic assistant for California propositions." },
           { role: "user", content: prompt }
