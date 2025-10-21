@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "sonar-medium-online", // try "sonar-large-online" for stronger results
+        model: "sonar", 
         messages: [
           { role: "system", content: "You are a helpful civic assistant for California propositions. Prefer concise, source-aware answers." },
           { role: "user", content: prompt }
