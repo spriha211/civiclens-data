@@ -26,10 +26,8 @@ export default async function handler(req, res) {
         // ✅ correct model names (as of 2025)
         model: "sonar", // or "sonar-pro" if you have Pro
         messages: [
-          {
-            role: "system",
-            content:
-              "You are a helpful civic assistant for California propositions. Prefer concise, factual answers.",
+          { role: "system", 
+           content: "You are a helpful civic assistant for California propositions. Prefer concise, factual answers. Do not include bracketed numeric citations like [1], [2]; use plain sentences." 
           },
           { role: "user", content: prompt },
         ],
