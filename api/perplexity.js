@@ -1,4 +1,3 @@
-// api/perplexity.js
 export default async function handler(req, res) {
   // CORS for Flutter web
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -24,17 +23,30 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "sonar-medium-online", // or "sonar-large-online"
+        model: "sonar-medium-online", // try "sonar-large-online" for stronger results
         messages: [
-          { role: "system", content: "You are a helpful civic assistant for California propositions." },
+          { role: "system", content: "You are a helpful civic assistant for California propositions. Prefer concise, source-aware answers." },
           { role: "user", content: prompt }
-        ],
+        ]
       }),
     });
 
     const data = await r.json();
-    const answer = data?.choices?.[0]?.message?.content ?? "No response.";
-    return res.status(200).json({ answer });
+
+    // Try multiple shapes just in case
+    const fromChoices = data?.choices?.[0]?.message?.content;
+    const fromOutput = data?.output_text;
+    const text = (fromChoices || fromOutput || "").toString().trim();
+
+    if (!text) {
+      // helpful debug payload (temporarily; remove later if you want)
+      return res.status(200).json({
+        answer: "No response.",
+        debug: data
+      });
+    }
+
+    return res.status(200).json({ answer: text });
   } catch (e) {
     return res.status(500).json({ error: String(e) });
   }
