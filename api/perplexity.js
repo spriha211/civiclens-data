@@ -1,7 +1,6 @@
 // /api/perplexity.js
-
 export default async function handler(req, res) {
-  // --- CORS for Flutter web & local testing ---
+  // --- CORS (Flutter web) ---
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader(
@@ -11,18 +10,16 @@ export default async function handler(req, res) {
   if (req.method === "OPTIONS") return res.status(200).end();
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
 
-  // --- Robust JSON body parsing (handles raw bodies) ---
+  // Parse body robustly
   async function readBody() {
     if (req.body && typeof req.body === "object") return req.body;
     const raw = await new Promise((resolve) => {
-      let data = "";
-      req.on("data", (c) => (data += c));
-      req.on("end", () => resolve(data || ""));
+      let data = ""; req.on("data", (c) => (data += c)); req.on("end", () => resolve(data || ""));
     });
     try { return JSON.parse(raw || "{}"); } catch { return {}; }
   }
 
-  const { prompt, history = [] } = await readBody();
+  const { prompt, history = [], context = "" } = await readBody();
   if (!prompt || typeof prompt !== "string") {
     return res.status(400).json({ error: "Missing prompt" });
   }
@@ -30,65 +27,61 @@ export default async function handler(req, res) {
   const key = process.env.PPLX_API_KEY;
   if (!key) return res.status(500).json({ error: "Missing PPLX_API_KEY" });
 
-  // --- Build messages (system + cleaned history + current user prompt) ---
-  const base = [
-    {
-      role: "system",
-      content:
-        "You are a concise civic assistant for California voters. If user context includes 'Context: User districts — ...' or a proposition line, incorporate it. Keep answers short (<=6 sentences or 3–6 plain hyphen bullets). No bold markdown, no [1] style citations.",
-    },
-    // take last 10 turns max to keep requests small
-    ...((Array.isArray(history) ? history : []).slice(-10)
-      // coerce to the shape Perplexity expects
-      .map(h => ({ role: h?.role === "assistant" ? "assistant" : "user", content: String(h?.content ?? "").trim() }))
-      // drop empties
-      .filter(m => m.content.length > 0)),
-    { role: "user", content: prompt.trim() },
+  // Build a single system message with optional context
+  const systemParts = [
+    "You are a helpful civic assistant for California propositions.",
+    "Be concise: reply in either 3–5 short hyphen bullets or 3–4 sentences.",
+    "No bold markdown, no bracket citations.",
   ];
-
-  // Ensure strict alternation (user/assistant/user/…); Perplexity is picky
-  const messages = [];
-  for (const m of base) {
-    if (!m.content) continue;
-    if (messages.length && messages[messages.length - 1].role === m.role) {
-      // skip duplicates-in-a-row
-      continue;
-    }
-    messages.push(m);
+  if (context && typeof context === "string") {
+    systemParts.push("Context:\n" + context.trim());
   }
+  const systemMessage = { role: "system", content: systemParts.join("\n\n") };
+
+  // Clean/limit history and ensure roles alternate (user/assistant)
+  const cleaned = [];
+  let lastRole = null;
+  for (const t of Array.isArray(history) ? history.slice(-12) : []) {
+    const r = (t.role || "").toLowerCase();
+    const c = (t.content || "").toString();
+    if (!c) continue;
+    if (r !== "user" && r !== "assistant") continue;
+    if (r === lastRole) continue;
+    cleaned.push({ role: r, content: c });
+    lastRole = r;
+  }
+
+  const messages = [systemMessage, ...cleaned, { role: "user", content: prompt }];
 
   try {
     const r = await fetch("https://api.perplexity.ai/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${key}`,
+        Authorization: `Bearer ${key}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "sonar",          // valid public model
+        model: "sonar", // or "sonar-pro" if your plan supports
         messages,
         temperature: 0.2,
-        max_tokens: 900,
       }),
     });
 
     const data = await r.json();
 
-    // Bubble up API errors clearly (helps you debug from Flutter)
-    if (!r.ok || data?.error) {
-      return res.status(r.status || 200).json({
-        answer: "No response.",
-        debug: { error: data?.error || data || { status: r.status } },
+    if (data?.error) {
+      return res.status(200).json({
+        answer: `API error: ${data.error?.message || "unknown error"}`,
+        debug: data,
       });
     }
 
     let text =
-      data?.choices?.[0]?.message?.content
-      ?? data?.output_text
-      ?? "";
+      data?.choices?.[0]?.message?.content ||
+      data?.output_text ||
+      "";
 
-    // Clean bold + numeric footnotes
-    text = text
+    text = (text || "")
       .replace(/\*\*(.*?)\*\*/g, "$1")
       .replace(/\[(\d+)\]/g, "")
       .trim();
@@ -98,6 +91,7 @@ export default async function handler(req, res) {
     }
     return res.status(200).json({ answer: text });
   } catch (e) {
-    return res.status(500).json({ answer: "No response.", debug: { error: String(e) } });
+    return res.status(500).json({ error: String(e) });
   }
 }
+
