@@ -872,5 +872,30 @@
         "url": "https://lao.ca.gov/Publications/Report/prop98-primer"
       }
     ]
+  },
+  {
+    "id": "prop-50-2025",
+    "displayId": "Prop 50 (2025)",
+    "type": "prop",
+    "topics": [
+      "constitution",
+      "elections",
+      "redistricting",
+      "congress"
+    ],
+    "status": "pending",
+    "official_url": "https://vig.cdn.sos.ca.gov/2025/special/pdf/prop50.pdf",
+    "full_text_url": "",
+    "one_line": "Temporarily uses new congressional maps (passed by the Legislature in Aug 2025) for CA’s 2026–2030 elections; keeps the independent Citizens Redistricting Commission for maps starting in 2031; expresses support for independent, nonpartisan commissions nationwide.",
+    "summary_short_bullets": [
+      "• Response to Texas’ mid-decade partisan redistricting; • Requires Legislature’s Aug 2025 congressional maps for CA elections through 2030; • Retains California’s independent Citizens Redistricting Commission and directs it to resume in 2031; • States policy preference for fair, independent, nonpartisan redistricting nationwide."
+    ],
+    "summary_detailed": "Proposition 50 is a Legislative Constitutional Amendment responding to other states’ mid-decade partisan redistricting. It temporarily requires California to use congressional district maps enacted by the Legislature in August 2025 for elections through 2030. It retains California’s independent Citizens Redistricting Commission and directs the Commission to resume drawing congressional districts after the 2030 Census and every ten years thereafter. The measure also states California’s support for fair, independent, and nonpartisan redistricting commissions nationally.",
+    "updated_at": "",
+    "cycle": "2025 Special",
+    "election_date": "2025-11-04",
+    "fiscal_impact": "One-time county costs—up to a few million dollars statewide—to update election materials for the new maps.",
+    "keywords": [],
+    "sources": []
   }
 ]
